@@ -1,0 +1,27 @@
+This program is a spile scrolling animation program. Below is an example of a how it should look like:
+
+-
+----
+---------
+----------------
+-------------------------
+------------------------------------
+-------------------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------
+------------------------------------
+-------------------------
+----------------
+---------
+----
+
+Pseudocode
+BEGIN
+Repeat forever 
+    IF indentIncrease is True
+        increase number of spikes to 20
+    END IF
+    IF indentIncrease is False
+        decrease number of spikes upto 0
+    END IF
+END

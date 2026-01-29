@@ -1,0 +1,28 @@
+This is a small animation program that creates back-and-forth zigzag pattern until the user
+stops it by pressing "ctr + c"
+
+How the output will look like:
+
+********
+   ********
+  ********
+ ********
+********
+ ********
+  ********
+   ********
+    ********
+
+Pseudocode
+BEGIN
+Run the program forever
+    IF indent is increasing
+        increase indentation space by 1
+        If indentations get to 20
+            decrease indentation
+        END IF
+        IF indentations get to 0
+            increase indentaton
+        END IF
+    END IF
+END
