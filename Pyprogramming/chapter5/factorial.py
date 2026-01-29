@@ -1,7 +1,7 @@
 # Import modules
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s -  %(levelname)s -  %(message)s')
+logging.basicConfig(filename= "myProgramLogfile.txt", level=logging.DEBUG, format='%(asctime)s -  %(levelname)s -  %(message)s')
 logging.debug("Starting the program")
 
 x = int(input("Enter number: "))
