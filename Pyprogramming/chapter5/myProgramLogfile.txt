@@ -6,3 +6,12 @@
 2026-01-29 09:54:18,905 -  DEBUG -  Recursion: 2
 2026-01-29 09:54:18,905 -  DEBUG -  Recursion: 1
 2026-01-29 09:54:18,905 -  DEBUG -  Recursive base case
+2026-01-29 10:10:25,717 -  DEBUG -  Starting the program
+2026-01-29 10:10:28,297 -  DEBUG -  Get user's input
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 6
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 5
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 4
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 3
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 2
+2026-01-29 10:10:28,298 -  DEBUG -  Recursion: 1
+2026-01-29 10:10:28,298 -  DEBUG -  Recursive base case
