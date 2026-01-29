@@ -1,0 +1,30 @@
+Implementation of a simple guese game using python.
+The player choose a random number between 1 and 20. He's give 6 trials.
+
+Pseudocode
+
+BEGIN
+
+SET random <- random integer number between 1 and 20
+
+SET guese = 0
+
+WHILE guese < 7 THEN 
+    INSERT user their guesed number
+    IF guese == random THEN 
+        PRINT Conglaturation! You got the lucky number 
+    END IF
+    ELSE
+        IF guese < random THEN
+            PRINT Your guese is too low
+            guese += 1
+        ENF IF
+        IF guese > random THEN
+            PRINT Your guese is too high
+            guese += 1
+        END IF
+    END ELSE
+END WHILE
+PRINT Lost! the correct number is {corect random number}
+
+END
