@@ -24,7 +24,7 @@ while True:
             print(f"{itemToRemove} not in the shopping list")
     elif choice == "3":
         print("Shopping list")
-        for index, item in enumerate(shoppingList):
+        for index, item in enumerate(shoppingList, start=1):
             print(f"{index}: {item}")
     elif choice == "4":
         itemToCheck = input("Enter item to check: ")
