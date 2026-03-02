@@ -1,0 +1,9 @@
+2026-01-29 11:34:47,752 -  DEBUG -  Starting the program
+2026-01-29 11:34:51,677 -  DEBUG -  Getting user's name as input: Evans
+2026-01-29 11:34:51,677 -  DEBUG -  Getting the random secret integer: 3
+2026-01-29 11:34:54,605 -  DEBUG -  Getting user's geuss 6
+2026-01-29 11:34:54,606 -  DEBUG -  Geuss: 6 > secret: 3
+2026-01-29 11:34:57,651 -  DEBUG -  Getting user's geuss 3
+2026-01-29 11:34:57,652 -  INFO -  The guess == secret number
+2026-01-29 11:34:57,652 -  INFO -  Start game check
+2026-01-29 11:34:57,652 -  INFO -  Done! project end.
