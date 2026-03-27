@@ -143,12 +143,14 @@ git clone <your repository url>
 cd SupermarketSalesAnalyzer
 ```
 
-### Step 2. Run the test scipt
+### Step 2. Run the test scipts
 
 Example usage:
 
 ```bash
 python -m tests.test_data_loder
+python -m tests.test_procsor
+python -m tests.test_reporter
 ```
 
 ## Concept covered
