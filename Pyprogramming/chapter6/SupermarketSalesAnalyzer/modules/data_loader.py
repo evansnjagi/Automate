@@ -22,7 +22,7 @@ def read_sales_file(filepath):
             # Appending to the list
             sales_data.append(
                 {
-                    "data": date,
+                    "date": date,
                     "product": product,
                     "quantity": int(quantity),
                     "price": float(price)

@@ -56,6 +56,9 @@ date,product,quantiy,price
 
 The project has following features: 
 
+
+### Loading the sales data
+
 - Read the sales data from the text file.
 
     Example:
@@ -88,6 +91,42 @@ The project has following features:
         }
     )
     ```
+
+### Processing data
+
+The data is received as a list of dictionaries. For example:
+
+```bash
+[
+    {'data': '2026-03-20', 'product': 'Bananas', 'quantity': 5, 'price': 15.0}
+    {'date': '2026-03-20', 'product': 'Bananas', 'quantity': 5, 'price': 15.0}
+]
+```
+
+Using aggregation formula, compute the total sales for the day and total sales for each product. 
+
+$$\text{Total sales} = \sum_i^n (quantity \times price)$$
+
+Connect it back to code example:
+
+```python
+for record in data:
+    revenue = record["quantity"] * record["price"]
+```
+
+using the revenue, we compute the aggregate value of products and daily sales. 
+
+Example code for aggregation:
+
+```python
+# Product aggreagete
+product_sales[product] += revenue
+
+# Daily sales
+daily_sales[date] += revenue
+```
+
+In the case where the product was not in the sales dictionary, we directly assign the revenue.
 
 ## Get started
 

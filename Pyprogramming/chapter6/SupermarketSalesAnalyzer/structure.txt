@@ -1,0 +1,19 @@
+.
+├── README.md
+├── data
+│   └── sales.txt
+├── modules
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   └── data_loader.cpython-312.pyc
+│   └── data_loader.py
+├── structure.txt
+└── tests
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-312.pyc
+    │   └── test_data_loader.cpython-312.pyc
+    └── test_data_loader.py
+
+6 directories, 11 files
