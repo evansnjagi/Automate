@@ -1,0 +1,11 @@
+=== Sales Summary Report ===
+
+Sales per product: 
+Apples: 510.0
+Bananas: 535.0
+Oranges: 240.0
+
+Sales per day
+2026-03-20: 375.0
+2026-03-21: 330.0
+2026-03-22: 580.0

@@ -128,6 +128,10 @@ daily_sales[date] += revenue
 
 In the case where the product was not in the sales dictionary, we directly assign the revenue.
 
+### Summary file
+
+Using `modules/reporter.py` we generate the summary of the daily sales and product sales. A `summary.txt` file is created having two main sections: Sales per product and sales per day.
+
 ## Get started
 
 ### Step 1. Clone the repository
