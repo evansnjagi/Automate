@@ -11,12 +11,14 @@ def write_summary(filepath, product_total, daily_total):
         file.write("=== Sales Summary Report ===\n\n")
 
         file.write("Sales per product: \n")
+        file.write("-"* 25 + "\n")
 
-        for product, sales in product_total.items():
-            file.write(f"{product}: {sales}\n")
+        for product, sales in sorted(product_total.items(), key = lambda x: x[1], reverse =True):
+            file.write(f"{product:<10}: KES {sales:,.2f}\n")
         
         # Daily sales
         file.write("\nSales per day:\n")
+        file.write("-"* 25 + "\n")
 
-        for day, sales in daily_total.items():
-            file.write(f"{day}: {sales}\n")
+        for day, sales in sorted(daily_total.items(), key = lambda x: x[1], reverse=True):
+            file.write(f"{day}: KES {sales:,.2f}\n")

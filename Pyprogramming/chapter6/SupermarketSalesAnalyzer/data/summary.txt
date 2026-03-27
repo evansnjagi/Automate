@@ -1,11 +1,13 @@
 === Sales Summary Report ===
 
 Sales per product: 
-Apples: 510.0
-Bananas: 535.0
-Oranges: 240.0
+-------------------------
+Bananas   : KES 535.00
+Apples    : KES 510.00
+Oranges   : KES 240.00
 
-Sales per day
-2026-03-20: 375.0
-2026-03-21: 330.0
-2026-03-22: 580.0
+Sales per day:
+-------------------------
+2026-03-22: KES 580.00
+2026-03-20: KES 375.00
+2026-03-21: KES 330.00
