@@ -55,7 +55,7 @@ A couple of files shows up but we are interested in `student-mat.csv`.
 Inside the `01_understanding_data.ipynb` file, we are going to explore some basic properties of the `student-math.csv` file.
 
 ### Uncovered
-- There are 396 students
+- There are 395 students
 - 33 features are included
 - No missing values
 - Useful features: 
@@ -64,10 +64,44 @@ Inside the `01_understanding_data.ipynb` file, we are going to explore some basi
     - failures
     - health
     - absences
+    - G3 (Final grade)
 
-Useful features will form a matrix $X \in \mathbb{R}^{396 \times 5}$ as $X_i = (Age, studytime, failures, health, absences)$
+Useful features will form a matrix $X \in \mathbb{R}^{395 \times 5}$ as $X_i = (Age, studytime, failures, health, absences)$
 
 ## Load the data
+
+The `load_data.py` file, get the students data into a dataframe, and convert it to an oriented dictionary.
+
+Example output:
+
+```bash
+[
+    {'age': 18, 'studytime': 2, 'failures': 0, 'health': 3, 'absences': 6, 'G3': 6}, 
+    {'age': 17, 'studytime': 2, 'failures': 0, 'health': 3, 'absences': 4, 'G3': 6}, 
+    {'age': 15, 'studytime': 2, 'failures': 3, 'health': 3, 'absences': 10, 'G3': 10}, 
+    {'age': 15, 'studytime': 3, 'failures': 0, 'health': 5, 'absences': 2, 'G3': 15}, 
+    {'age': 16, 'studytime': 2, 'failures': 0, 'health': 5, 'absences': 4, 'G3': 10}
+]
+
+```
+
+How to get the data in a script file:
+
+```python
+from src.load_data import load_dataset
+
+data = load_dataset(filepath) 
+
+# Filepath -> Where the file is located
+```
+
+How to get the data directly in bash
+
+```bash
+python -m tests.load_data_test
+```
+
+## Analyze grade
 
 
 ## Requirements
