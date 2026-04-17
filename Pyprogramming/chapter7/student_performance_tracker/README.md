@@ -103,7 +103,21 @@ python -m tests.load_data_test
 
 ## Analyze grade
 
+The first plot is about age against the G3 results.
 
+The plot will be save in the `images/` folder. You'll only provide the file name in the `analyzer_test.py` file.
+
+Run the command below to get the age_result plot:
+
+```bash
+python -m tests.analyzer_test
+```
+
+The resultant plot is as seen below:
+
+![Age Vs. G3 results](images/age_result.png)
+
+As seen, age is not a major grade influencer, although it is noticiable that leaners who are 20 yrs performed lower compared to yonger ones.
 ## Requirements
 
 This project use the following packages:
