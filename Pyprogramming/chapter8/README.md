@@ -47,3 +47,23 @@ To get the string run the code below in bash terminal
 code escape_sequence.py
 python escape_sequence.py
 ```
+
+## Raw string
+
+These are strings where escape sequences are ignore.
+
+They are created by adding an `r` before the string.
+
+Example:
+
+```bash
+code raw_string.py
+python raw_string.py
+```
+
+Raw strings are heavily used in: 
+
+1. File paths
+2. Regular expressions
+3. Working with logs: i.e detecting security logs or system monitoring.
+
