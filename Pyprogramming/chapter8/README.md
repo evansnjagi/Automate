@@ -19,3 +19,31 @@ code string_literal.py
 python string_literal.py
 ```
 
+## Escape sequences
+
+These are special characters that are used to represent something that is hard or imposible to type in the actual code.
+
+Example of escape characters in Python
+
+|Escape characters| What they do|
+|-----------------|-------------|
+|\n| Create a new line|
+|\t| Tab|
+|\\\| Backslash character|
+|\\'| Single quote|
+
+There are many more escape characters.
+
+We have a program that print the strings below:
+
+Name:    Evans
+Age:     25
+
+Location: Nairobi
+
+To get the string run the code below in bash terminal
+
+```bash
+code escape_sequence.py
+python escape_sequence.py
+```
