@@ -67,3 +67,22 @@ Raw strings are heavily used in:
 2. Regular expressions
 3. Working with logs: i.e detecting security logs or system monitoring.
 
+## Multi-line strings
+
+These are strings that pass multiple lines. They are created using tripple quotation marks: either `"""your string"""` or `'''your string'''`.
+
+Example:
+
+```python
+# Multi-string 
+
+multi_string = """
+    Name: Evans
+
+    Role: Data scientist
+
+    Goal: Build a theft detection system
+"""
+
+print(multi_string)
+```
