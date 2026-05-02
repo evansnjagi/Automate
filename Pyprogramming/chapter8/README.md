@@ -165,3 +165,26 @@ model_name = "Theft Detection Model"
 accuracy = 0.93
 ```
 and output the following message: `The Theft Detection Model has an accuracy of 93.0%`
+
+## Changing the case
+
+`.lower`: Used to convert a string to lower case
+`.upper` : Does the opposite of `.lower`. It convert a string to upper case.
+
+These two methods do NOT change the original string.
+
+Task:
+
+Write a program that stores: `user_input = "DaTa ScIeNcE"`. Convert it to lowercase and uppercase and print both results.
+
+To get the source code, run the following command:
+
+```bash
+code string_case.py
+```
+
+Finally, to get the output run the following command.
+
+```bash
+python string_case.py
+```
