@@ -1,9 +1,9 @@
 # Alert program
 
-message = "The system detected a theft at midnight"
+alert_message = "The system detected a theft at midnight"
 
 # Search
-if "theft" in message.lower():
+if "theft" in alert_message.lower():
     print("Alert: Theft detected")
 else:
     print("No threat")
