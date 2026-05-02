@@ -9,4 +9,4 @@ user_input_lower = user_input.lower()
 user_input_upper = user_input.upper()
 
 # Print resuts
-print(f"Lower case: {user_input_lower}\nUpper case: {user_input_upper}")
+print(f"Original text: {user_input}\nLower case: {user_input_lower}\nUpper case: {user_input_upper}")
