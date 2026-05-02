@@ -103,3 +103,22 @@ Then run the code using this code:
 ```bash
 python indexing_slicing.py
 ```
+
+## `In` and `not in` operators
+
+In: It's a simple but powerful way of searching patterns in Python.
+
+Example:
+
+```python
+name = "Evans"
+if E in name:
+    print("Yes, Available")
+else:
+    print("No, Not in the name")
+```
+Task:
+
+Write a program that stores this text `"The system detected a theft at midnight"`, then check if the `theft` exists.If yes, print `Alart: Theft detected`. If not, print `No threat`.
+
+Bonus make the string case sensitive.
