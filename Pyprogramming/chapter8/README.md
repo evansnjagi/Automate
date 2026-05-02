@@ -86,3 +86,20 @@ multi_string = """
 
 print(multi_string)
 ```
+
+## Indexing and slicing.
+
+Indexing: You get one piece of the string.
+Slicing: You get a protion of the string.
+
+To get an example usage, use the command below.
+
+```bash
+code indexing_slicing.py
+```
+
+Then run the code using this code:
+
+```bash
+python indexing_slicing.py
+```
