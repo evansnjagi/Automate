@@ -122,3 +122,46 @@ Task:
 Write a program that stores this text `"The system detected a theft at midnight"`, then check if the `theft` exists.If yes, print `Alart: Theft detected`. If not, print `No threat`.
 
 Bonus make the string case sensitive.
+
+To get the solution, run the following bash command
+
+```bash
+code alert.py
+```
+
+To get the Python output, run this command
+
+```bash
+python alert.py
+```
+
+## f-strings
+
+f-strings allows us to insert variables or expressions directly inside a string.
+
+Example:
+
+```python
+name = "Evans"
+age = 25
+
+print(f"My name is {name} and I am {age} years old")
+```
+
+In data science we can use f-strings to dynamically name files. Example
+
+```python
+date = "2026-05-01"
+
+filename = f"report_{date}.csv"
+```
+
+Task:
+
+write a program that stores 
+
+```r
+model_name = "Theft Detection Model"
+accuracy = 0.93
+```
+and output the following message: `The Theft Detection Model has an accuracy of 93.0%`
