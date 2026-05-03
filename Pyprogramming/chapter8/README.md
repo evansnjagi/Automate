@@ -188,3 +188,106 @@ Finally, to get the output run the following command.
 ```bash
 python string_case.py
 ```
+
+## String validation methods(`isX()`).
+
+These methods are used to check what kind of characters are in a string.
+
+They return either `True` or `False`.
+
+Common methods includes:
+
+1. `isalpha()` - Check if a string contains letters only.
+
+Example:
+
+"hello".isalpha() - Retruns True.
+"hello123".isalpha() - Returns False.
+2. `isalnum()` - Checks for letters and numbers.
+
+Example:
+
+"user122".isalnum() - Return True
+
+If there is a space in between, it returns False.
+
+Example:
+
+"user 123".isalnum()
+
+The above will return false because a space is not either a letter or a number.
+
+3. `isdecimal()` - Checks for numbers only.
+
+Example:
+
+"123".isdecimal() - Returns True.
+
+If the number is not an integer, the function will return false. 
+
+Example:
+
+"123.3".isdecimal() - Returns false.
+
+4. `isspace()`- Checks for only spaces, tabs and newlines.
+
+Example:
+
+" ".isspace() - Returns true
+
+5. `istitle()` - Checks if the characters/ string are in a title case.
+
+Example:
+
+"This Is A Tittle".istitle() - Return true
+
+The above methods are used in data cleaning pipeline. By doing the following:
+- Prevent errors during integer conversion
+- Filter invalid data 
+
+Example:
+```python
+username = "user_123"
+
+if username.isalnum():
+    print("Valid")
+else:
+    print("Invalid")
+```
+- Remove noise in NLP. 
+
+Example:
+
+```python
+words = ["data", "science", "AI", "123"]
+
+clean_words = [w for w in words if words.isalpha()]
+```
+
+Task:
+
+Write a program that:
+
+1. Asks users for input
+    - Age
+    - User name
+2. Validate user's input
+    - Age must be an integer
+    - User name must contain letters and numbers
+3. The program should print:
+    - "Valid input" if all tests pass
+    - "Invalid input" if one of the test fails.
+
+Solution.
+
+Run the bash command to get the script `string_validation.py`
+
+```bash
+code string_validation.py
+```
+
+To run it, run the following code
+
+```bash
+python string_validation.py
+```
