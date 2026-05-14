@@ -297,9 +297,11 @@ The `split()` breaks the text and returns a list. What happens is that it scans 
 
 The `join()` combines strings by reconstructing texts together. This method is highly optimized compared to using the `+` concatenation method. 
 
-Concatinting strings calls for creationg of a new string first. Remember, strings are immutable and so before joining them one must create a new string to hold the old one together with the added new string.
+Concatinting strings calls for creationg of a new string first. Remember, strings are immutable and so before joining them one must create a new string to hold the old one together with the added new string. Then, the old string is copied, and later the temporary objects destroyed. 
 
-Example usage:
+The string concatenation method is computationary heavy and takes alot of memory which can lead to issues if you are working on a very big string.
+
+Example: An optimized alternative.
 
 ```python
 name_message = "My name is   Evans"
@@ -335,7 +337,7 @@ i love data science
 
 Steps taken:
 
-While solving the above problem, these are the steps I took:
+While solving the above problem, the following are steps to follow:
 
 1. Split the message
 2. Using a list comprehension, convert singled string to lower case strings.
@@ -348,3 +350,50 @@ Application:
 2. Cleaning dataset
 3. Cleaning scraped data
 4. Cleaning messy user input data
+
+## Sting justification
+
+`rjust()` - Righ justification
+
+Example usage:
+
+```python
+"Hello".rjust(8, "-")
+```
+
+Expected output:
+
+```raw
+---"Hello"
+```
+
+`ljust()` - Left justification
+
+Example usage:
+
+```pyhton
+"string".ljust(8, "*")
+```
+Expected results:
+
+```r
+"string"**
+```
+
+`center()` - Centeing
+
+Example:
+
+```python
+"python".center(10, "-")
+```
+
+Results:
+
+```raw
+--"python"--
+```
+
+Intuition:
+
+padding = width - len(text)
