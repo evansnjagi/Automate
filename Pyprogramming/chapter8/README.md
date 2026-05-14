@@ -291,3 +291,60 @@ To run it, run the following code
 ```bash
 python string_validation.py
 ```
+### The `split()` and `join()` functions
+
+The `split()` breaks the text and returns a list. What happens is that it scans for white space or custom split characters.
+
+The `join()` combines strings by reconstructing texts together. This method is highly optimized compared to using the `+` concatenation method. 
+
+Concatinting strings calls for creationg of a new string first. Remember, strings are immutable and so before joining them one must create a new string to hold the old one together with the added new string.
+
+Example usage:
+
+```python
+name_message = "My name is   Evans"
+
+# Split message
+new_message = name_message.split()
+
+# Join message list
+cleaned_message = " ".join(new_message)
+```
+
+Worked script example.
+
+You are given a text `"I love Data Science`, make all the characters in the string to be lower case.
+
+Open:
+
+```bash
+make split_join.py
+```
+
+Run the script:
+
+```bash
+python split_join.py
+```
+
+Expected output:
+
+```r
+i love data science
+```
+
+Steps taken:
+
+While solving the above problem, these are the steps I took:
+
+1. Split the message
+2. Using a list comprehension, convert singled string to lower case strings.
+3. Join the converted strings together to form a sentence. The sentence is really one big string. 
+4. Print out the results for inspection.
+
+Application:
+
+1. Tokenization in NLP processing.
+2. Cleaning dataset
+3. Cleaning scraped data
+4. Cleaning messy user input data
